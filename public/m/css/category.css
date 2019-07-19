@@ -1,0 +1,66 @@
+.my-content {
+    position: absolute;
+    top: 44px;
+    bottom: 50px;
+    width: 100%;
+    background-color: #f5f5f5
+}
+
+.my-content .zuo {
+    position: relative;
+    float: left;
+    width: 80px;
+    height: 100%;
+}
+
+.my-content .you {
+    position: relative;
+    margin-left: 90px;
+    height: 100%;
+}
+
+.my-content .zuo .links {
+    background-color: #fff
+}
+
+.my-content .zuo .links a {
+    display: block;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    font-size: 14px;
+    color: #000;
+    border-right: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.my-content .zuo .active {
+    background-color: #f5f5f5;
+    border-right: 1px solid transparent !important;
+}
+
+.my-content .you ul {
+    margin-top: 10px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.my-content .you ul li {
+    float: left;
+    width: 33.33%;
+}
+
+.my-content .you ul li a img {
+    width: 100%;
+}
+
+.my-content .you ul li a p {
+    text-align: center;
+    font-size: 12px;
+}
+
+.no {
+    color: red;
+    padding-top: 10px;
+    text-align: center;
+}

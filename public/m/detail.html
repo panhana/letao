@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/mui/css/mui.min.css">
+    <link rel="stylesheet" href="assets/fontAwesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/detail.css">
+    <script src="assets/mui/js/mui.min.js"></script>
+    <script src="assets/zepto/zepto.min.js"></script>
+    <script src="assets/art-template1/template-web.js"></script>
+    <script src="js/public.js"></script>
+    <script src="js/detail.js"></script>
+    <title>Document</title>
+</head>
+
+<!-- 商品详情页 -->
+
+<body>
+    <header class="mui-bar mui-bar-nav my-header">
+        <!-- <a class="mui-icon mui-icon-search mui-pull-right"></a> -->
+        <!-- <a class="mui-icon mui-icon-search mui-icon-left-nav"></a> -->
+        <h1 class="mui-title">商品详情</h1>
+    </header>
+
+    <nav class="mui-bar mui-bar-tab footer my-footer">
+
+        <a class="mui-tab-item" href="index.html">
+            <span class="mui-icon mui-icon-home "></span>
+            <span class="mui-tab-label">首页</span>
+        </a>
+
+        <a class="mui-tab-item" href="category.html">
+            <span class="mui-icon mui-icon-bars"></span>
+            <span class="mui-tab-label">分类</span>
+        </a>
+        <a class="mui-tab-item" href="cart.html">
+            <span class="mui-icon fa fa-shopping-cart"></span>
+            <span class="mui-tab-label">购物车</span>
+        </a>
+        <a class="mui-tab-item" href="user.html">
+            <span class="mui-icon mui-icon-person"></span>
+            <span class="mui-tab-label">会员中心</span>
+        </a>
+    </nav>
+
+
+
+    <div class="mui-scroll-wrapper" style="bottom: 50px; top: 44px;">
+        <div class="mui-scroll">
+            <!--这里放置真实显示的DOM内容-->
+
+            <!-- 轮播图 -->
+
+            <div id="box"></div>
+
+
+
+
+            <div class="footers">
+                <div class="zuo">
+                    数量:
+                </div>
+
+                <div class="zhong">
+                    <span class="jian">-</span>
+                    <input type="text" value="1" id="input">
+                    <span class="jia">+</span>
+                </div>
+
+                <div class="you">
+                    剩余:44件
+                </div>
+            </div>
+
+            <div class="btns">
+
+                <a href="cart.html">查看购物车</a>
+                <a href="#" id="jiarun">加入购物车</a>
+
+            </div>
+        </div>
+
+    </div>
+</body>
+
+<script type="text/html" id="tel">
+
+
+    <div class="mui-slider">
+        <div class="mui-slider-group">
+            {{each pic}}
+            <div class="mui-slider-item"><img src="{{$value.picAddr}}"></div>
+            {{/each}}
+        </div>
+    </div>
+
+    <div class="title">
+        {{proName}}
+    </div>
+
+    <div class="neirong">
+        价格:
+        <span class="now">￥{{price}}</span>
+        <span class="old">￥{{oldPrice}}</span>
+    </div>
+
+    <div class="chima">
+        尺码：
+        <!-- 它接口文档返回的尺码数据是35-56 -->
+        <% var size = size.split("-") %>
+            <!-- 然后就分割成了 ["35",36]这样的形式 -->
+            <% for(var i=size[0];i<=size[1];i++){ %>
+                <span><%=i %></span>
+                <% } %>
+    </div>
+
+
+
+</script>
+
+<script>
+    // $("#box").on("tap", ".chima span", function() {
+    //     $(this).addClass("bian").siblings().removeClass("bian")
+    // })
+</script>
+
+</html>

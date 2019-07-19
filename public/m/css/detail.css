@@ -1,0 +1,113 @@
+.mui-slider img {
+    vertical-align: top;
+}
+
+.title {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.neirong {
+    padding: 10px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.neirong .now {
+    font-size: 24px;
+    color: red;
+}
+
+.neirong .old {
+    color: #ccc;
+    text-decoration: line-through;
+    padding-left: 20px;
+}
+
+.chima {
+    padding: 10px;
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+
+.chima span {
+    /* float: left; */
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    border: 1px solid #ccc;
+    line-height: 28px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.footers {
+    border-top: 1px solid #ccc;
+    overflow: hidden;
+    padding: 10px;
+    height: 45;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+.footers .zuo {
+    float: left;
+    padding-right: 10px;
+}
+
+.footers span {
+    float: left;
+    width: 28px;
+    height: 28px;
+    border: 1px solid #ccc;
+    line-height: 28px;
+    text-align: center;
+}
+
+.footers input {
+    float: left;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
+    vertical-align: top;
+    text-align: center;
+}
+
+.footers .you {
+    float: left;
+    padding-left: 10px;
+}
+
+.btns {
+    overflow: hidden;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.btns a {
+    float: left;
+    width: 50%;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    color: #fff;
+}
+
+.btns a:first-child {
+    background-color: #fa672d
+}
+
+.btns a:last-child {
+    background-color: #991020
+}
+
+.bian {
+    color: #fff;
+    background-color: #fa672d;
+}

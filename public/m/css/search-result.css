@@ -1,0 +1,21 @@
+.result {
+    padding: 10px;
+    text-align: center;
+    width: 93%;
+    height: 36.8px;
+    background-color: #efeff4;
+    margin: 10px auto;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.result .mui-icon {
+    font-size: 14px;
+}
+
+#content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+}

@@ -1,0 +1,39 @@
+.yanzhengma {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    color: #006699;
+    transform: translateY(-50%);
+}
+
+.mui-btn,
+button,
+input[type=button],
+input[type=reset],
+input[type=submit] {
+    width: 92%;
+}
+
+.denglu {
+    position: absolute;
+    right: 15px;
+    bottom: -40px;
+    color: #006699;
+}
+
+.mui-input-group:after {
+    background-color: transparent
+}
+
+.mui-input-row {
+    font-size: 14px;
+}
+
+.denglu {
+    font-size: 14px;
+}
+
+#denglu {
+    margin-top: 16px;
+    background-color: #006699
+}
